@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Public Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-dmsans: 'DM Sans';
+
+  --color-Neutral-50: #F6F6F6;
+  --color-Neutral-100: #E7E7E7;
+  --color-Neutral-200: #D1D1D1;
+  --color-Neutral-300: #B0B0B0;
+  --color-Neutral-400: #888888;
+  --color-Neutral-500: #737373;
+  --color-Neutral-600: #5D5D5D;
+  --color-Neutral-700: #4F4F4F;
+  --color-Neutral-800: #454545;
+  --color-Neutral-900: #3D3D3D;
+
+  --color-Black-Light: #171717;
+  --color-Light: #FFFFFF;
+  --color-Grey-Light: #F7F7F7;
+  --color-Dark: #101011;
+
+  --color-GreyBorder:#2B2B2B;
+  --color-Biru:#0F60FF;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffff;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
