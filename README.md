@@ -29,11 +29,11 @@ Aplikasi berbasis web untuk mengelola operasional toko fashion "Luxora". Aplikas
 
 Sebelum mulai menjalankan aplikasi ini, pastikan device telah terinstal:
 1. **Python** (versi 3.8 ke atas)
-2. **MySQL Server** (bisa menggunakan XAMPP, Laragon, atau MySQL server lain)
-   link : https://github.com/leokhoa/laragon/releases/tag/6.0.0
-4. **Node.js**
+2. **MySQL Server** (bisa menggunakan XAMPP, Laragon, atau MySQL server lain),
+   link : https://github.com/leokhoa/laragon/releases/tag/6.0.0. Lalu install phpmyadmin dari MySQL Server yang sudah di download
+4. **Node.js**, link : https://nodejs.org/en/download
 5. Download source code dalam zip dari github lalu ekstrak
-6. Hasil ekstrak **wajib** di simpan dalam direktori C:\DASHBOARD
+6. Hasil ekstrak **WAJIB** di simpan dalam direktori C:\DASHBOARD
 
 
 ## Langkah 1: Database (MySQL)
@@ -94,8 +94,7 @@ Backend berada di dalam folder `dashboard-backend`. Ikuti langkah berikut melalu
 
 ## Langkah 3: Menjalankan Frontend (React + Vite)
 
-Frontend berada di dalam folder `dashboard-frontend`. Buka terminal/CMD **BARU** (jangan tutup terminal backend karena akan menghentikan server), lalu ikuti langkah ini:
-
+Frontend berada di dalam folder `dashboard-frontend`. Buka terminal/CMD **BARU** (jangan tutup terminal backend karena akan menghentikan server) :
 1. Masuk ke folder frontend:
    
    ```bash
