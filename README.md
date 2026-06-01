@@ -32,6 +32,7 @@ Sebelum mulai menjalankan aplikasi ini, pastikan device telah terinstal:
 2. **MySQL Server** (bisa menggunakan XAMPP, Laragon, atau MySQL server lain)
 3. **Node.js**
 4. Download source code dalam zip dari github lalu ekstrak
+5. Hasil ekstrak **wajib** di simpan dalam direktori C:\DASHBOARD
 
 
 ## Langkah 1: Database (MySQL)
