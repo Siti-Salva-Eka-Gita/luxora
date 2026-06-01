@@ -433,7 +433,7 @@ export default function Produk() {
                 <div>
                   <div className="flex flex-col gap-1.5 sm:col-span-2 w-100 h-120 mr-3 ">
                     <label className="text-xs font-semibold text-gray-500 dark:text-gray-400">Gambar Produk</label>
-                    <div className="relative border-2 border-dashed border-gray-200 dark:border-white/10 hover:border-blue-500 rounded-2xl p-4 transition-all flex flex-col items-center justify-center gap-2 cursor-pointer bg-gray-50/50 dark:bg-white/2 hover:bg-blue-50/5 dark:hover:bg-blue-500/5 group min-h-36 h-full">
+                    <div className="relative border-2 border-dashed border-gray-200 dark:border-white/10 hover:border-GreyBorder rounded-2xl p-4 transition-all flex flex-col items-center justify-center gap-2 cursor-pointer bg-gray-50/50 dark:bg-white/2 hover:bg-blue-50/5 dark:hover:bg-blue-500/5 group min-h-36 h-full">
                       <input
                         type="file"
                         accept="image/*"
@@ -470,7 +470,7 @@ export default function Produk() {
                 <div className='flex flex-col gap-4.5'>
                   <div className="flex flex-col gap-1.5 sm:col-span-2">
                     <label className="text-xs font-semibold text-gray-500 dark:text-gray-400">Nama Produk</label>
-                    <div className="flex items-center bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-GreyBorder rounded-xl px-3.5 py-2.5 transition-all focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/10">
+                    <div className="flex items-center bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-Dark rounded-xl px-3.5 py-2.5 transition-all dark:focus-within:border-GreyBorder">
                       <input
                         type="text"
                         placeholder="Masukkan nama produk..."
@@ -539,7 +539,7 @@ export default function Produk() {
                   {/* Harga */}
                   <div className="flex flex-col gap-1.5">
                     <label className="text-xs font-semibold text-gray-500 dark:text-gray-400">Harga (Rupiah)</label>
-                    <div className="flex items-center bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-GreyBorder rounded-xl px-3.5 py-2.5 transition-all focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/10">
+                    <div className="flex items-center bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-Dark rounded-xl px-3.5 py-2.5 transition-all dark:focus-within:border-GreyBorder">
                       <span className="text-sm text-gray-400 dark:text-gray-500 font-semibold mr-1 select-none">Rp</span>
                       <input
                         type="number"
@@ -556,7 +556,7 @@ export default function Produk() {
                   {/* Stok */}
                   <div className="flex flex-col gap-1.5 sm:col-span-2">
                     <label className="text-xs font-semibold text-gray-500 dark:text-gray-400">Jumlah Stok</label>
-                    <div className="flex items-center bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-GreyBorder rounded-xl px-3.5 py-2.5 transition-all focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/10">
+                    <div className="flex items-center bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-Dark rounded-xl px-3.5 py-2.5 transition-all dark:focus-within:border-GreyBorder">
                       <input
                         type="number"
                         placeholder="0"
@@ -608,22 +608,19 @@ export default function Produk() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-[fadeIn_0.2s_ease-out]">
           {/* Backdrop Blur Overlay */}
           <div
-            className="absolute inset-0 bg-black/60 dark:bg-black/80 backdrop-blur-sm transition-opacity duration-300"
+            className="absolute inset-0 bg-black/60 dark:bg-black/20 backdrop-blur-sm transition-opacity duration-300"
             onClick={() => !isDeleting && setDeleteProductData(null)}
           />
 
           {/* Modal Container */}
-          <div className="relative bg-white dark:bg-Black-Light border border-red-100/20 dark:border-red-500/10 rounded-3xl w-full max-w-md shadow-2xl p-6 overflow-hidden transform transition-all duration-300 z-10 animate-[scaleIn_0.2s_ease-out]">
+          <div className="relative bg-white dark:bg-Black-Light border border-red-100/20 dark:border-red-500/10 rounded-3xl w-full max-w-xl h-[300px] shadow-2xl p-6 overflow-hidden transform transition-all duration-300 z-10 animate-[scaleIn_0.2s_ease-out]">
 
             {/* Modal Header / Icon */}
-            <div className="flex flex-col items-center text-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-full bg-red-50 dark:bg-red-500/10 flex items-center justify-center text-red-600 dark:text-red-400">
-                <X size={24} />
-              </div>
+            <div className="flex flex-col items-center text-center gap-3 mb-9">
               <div>
-                <h3 className="text-lg font-bold text-gray-800 dark:text-white">Hapus Produk Permanen?</h3>
-                <p className="text-xs text-gray-400 dark:text-gray-400 mt-1 px-4">
-                  Apakah Anda yakin ingin menghapus produk <strong className="text-gray-700 dark:text-gray-200">{deleteProductData.productName}</strong> ({deleteProductData.productCode}) secara permanen? Tindakan ini tidak dapat dibatalkan.
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mt-3">Hapus Produk Permanen?</h3>
+                <p className="text-s text-gray-400 dark:text-gray-400 mt-13 px-4">
+                  Apakah Anda yakin ingin menghapus produk <strong className="text-gray-800 dark:text-gray-300">{deleteProductData.productName}</strong> ({deleteProductData.productCode}) secara permanen? Tindakan ini tidak dapat dibatalkan.
                 </p>
               </div>
             </div>
