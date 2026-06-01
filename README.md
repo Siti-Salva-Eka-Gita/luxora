@@ -3,7 +3,11 @@
 Aplikasi berbasis web untuk mengelola operasional toko fashion "Luxora". Aplikasi ini dibuat untuk membantu usaha atau perusahaan dalam mengelola produk, stok, supplier, dan transaksi secara terstruktur sehingga dapat mendukung berjalannya aktivitas yang lebih efektif.
 
 ## Anggota Kelompok
-- Wandy Jesaya Simanjuntak (25051204059)
+- Siti Salva Eka Gita (25051204009)
+- Albani Rasya Surya S. (25051204011)
+- Wandy Jesaya Simanjutak (25051204059)
+- Adinda Fatihadina (25051204225)
+
 
 ## Fitur Utama
 - Manajemen Produk
