@@ -29,8 +29,8 @@ Aplikasi berbasis web untuk mengelola operasional toko fashion "Luxora". Aplikas
 
 Sebelum mulai menjalankan aplikasi ini, pastikan device telah terinstal:
 1. **Python** (versi 3.8 ke atas)
-2. **Node.js** (versi 16 ke atas)
-3. **MySQL Server** (bisa menggunakan XAMPP, Laragon, atau MySQL server lain)
+2. **MySQL Server** (bisa menggunakan XAMPP, Laragon, atau MySQL server lain)
+3. Download source code dalam zip dari github lalu ekstrak
 
 
 ## Langkah 1: Database (MySQL)
