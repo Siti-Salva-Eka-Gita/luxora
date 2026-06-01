@@ -22,8 +22,9 @@ export default function Sidebar({ activePage, setActivePage, darkMode, setDarkMo
     <aside className="font-dmsans w-52 bg-white dark:bg-Black-Light flex flex-col shrink-0 mt-3 ml-3 mb-3 rounded-xl">
       {/* Logo */}
       <div className="px-5 py-4 text-black dark:text-Light">
-        <div className="flex items-center gap-2.5">
-          <span className="ml-13 font-bold text-lg tracking-tight">Luxora</span>
+       <div className="flex items-center gap-2">
+          <img src="/logo.svg" alt="Luxora" className="w-7 h-7" />
+          <span className="font-bold text-lg tracking-tight">Luxora</span>
         </div>
       </div>
 
